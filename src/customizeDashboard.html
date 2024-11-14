@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="output.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>Dashboard</title>
+  <script src="https://kit.fontawesome.com/201614f162.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="w-full flex">
+    <!-- left-sidebar -->
+    <div class="navigation lg:fixed z-50 top-0 transition-all duration-300 overflow-hidden">
+        <div class="drawer lg:drawer-open">
+          <input id="my-drawer-2" type="checkbox" class="drawer-toggle" />
+          <div class="drawer-content flex flex-col items-center justify-center">
+            <!-- Page content here -->
+            <label for="my-drawer-2"
+              class="btn btn-black dark:bg-[#24303F]  dark:shadow dark:border-1 dark:border-[#334155]   dark:text-white drawer-button lg:hidden fixed top-4 left-8">
+              <i class="fa-solid fa-bars text-[20px]"></i>
+            </label>
+          </div>
+          <div class="drawer-side">
+
+            <label for="my-drawer-2" aria-label="close sidebar" class="drawer-overlay"></label>
+            <ul
+              class="dark:bg-[#24303F]  dark:text-white menu border-r dark:border-none w-[300px] bg-white lg:bg-white shadow-inner min-h-full text-base-content">
+              <li class="mt-2 mb-6 ">
+                <div class="dropdown rounded-none hover:bg-transparent ">
+                  <div tabindex="0" class="flex items-center justify-center  gap-5 text-xl font-semibold">
+                    <div class="flex gap-4 justify-center items-center">
+                      <img class="w-10 h-8 mx-auto block" src="../images/logo.png" alt="" />
+                      <span>TwiteAdmin </span>
+                    </div>
+                    <div><i class="fa-solid fa-angle-down text-[15px]"></i></div>
+                  </div>
+                  <ul
+                    class="top-0 right-0 left-0  mx-auto shadow-inner menu dropdown-content z-50 w-[280px] h-72 bg-[#F2F2F2] dark:text-white overflow-auto dark:bg-[#24303F] border dark:border dark:border-[#334155] rounded-b-md">
+                    <div>
+                      <li>
+                        <a class="flex items-center px-[18px] hover:bg-gray-000 dark:border-strokedark  dark:hover:bg-gray-700"
+                          href="">
+                          <div tabindex="0" class="flex items-center justify-center gap-5 text-xl font-semibold">
+                            <div class="flex gap-4 items-center">
+                              <img class="w-8 h-8" src="../images/logo.png" alt="" />
+                              <span>TwiteAdmin </span>
+                            </div>
+                            <div><i class="fa-solid fa-angle-down text-[15px]"></i></div>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center  border-stroke px-[18px] hover:bg-gray-200 dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">
+                          <div class="h-10 w-10">
+                            <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                          </div>
+
+                          <div class="ml-2">
+                            <h6 class="text-sm font-medium text-black dark:text-white">
+                              Mariya Desoja
+                            </h6>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center  border-t border-stroke px-[18px] hover:bg-gray-000 dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">
+                          <div class="h-10 w-10">
+                            <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                          </div>
+
+                          <div class="ml-2">
+                            <h6 class="text-sm font-medium text-black dark:text-white">
+                              Yash Glean
+                            </h6>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center  border-t border-stroke px-[18px] hover:bg-gray-200 dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">
+                          <div class="h-10 w-10">
+                            <img class="rounded-full" src="./images/user/user1.jpeg" alt="User" />
+                          </div>
+
+                          <div class="ml-2">
+                            <h6 class="text-sm font-medium text-black dark:text-white">
+                              Marcu Daniel
+                            </h6>
+                          </div>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="flex items-center justify-center mt-3 border-t border-stroke px-[18px] py-3 hover:bg-gray-400  dark:bg-gray-700 h-9 bg-[#D2D2D2] text-[#333] dark:text-white dark:border-strokedark dark:hover:bg-gray-700"
+                          href="">+ Add Shop
+                        </a>
+                      </li>
+                    </div>
+                  </ul>
+                </div>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="dashboard.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid  fa-house-chimney text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Dashboard</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="users.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid  fa-user text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Users</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="#">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-message mt-1 text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Message</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="#">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-receipt  text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Invoice</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5">
+                <details>
+                  <summary>
+                    <div class="flex items-center justify-center gap-5">
+                      <span class="icon"><i class="fa-regular fa-rectangle-list text-[18px] text-[#6B7280]"></i></span>
+                      <span class="text-base dark:text-[#dcdee3]">Forms</span>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li><a href="form.html" class="text-[17px] ml-5">Form Layout</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li class="mt-2 pr-5">
+                <details>
+                  <summary>
+                    <div class="flex items-center justify-center gap-5">
+                      <span class="icon"><i class="fa-solid fa-file-lines text-[18px] text-[#6B7280]"></i></span>
+                      <span class="text-base dark:text-[#dcdee3] ml-2">Pages</span>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li><a href="" class="text-[17px] ml-5">Pricing</a></li>
+                    <li><a href="" class="text-[17px] ml-5">services</a></li>
+                    <li><a href="" class="text-[17px] ml-5">FAQ</a></li>
+                    <li><a href="" class="text-[17px] ml-5">404</a></li>
+                    <li><a href="" class="text-[17px] ml-5">Stater</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li class="mt-2 pr-5">
+                <details>
+                  <summary>
+                    <div class="flex items-center justify-center gap-5">
+                      <span class="icon"><i class="fa-solid fa-layer-group text-[18px] text-[#6B7280]"></i></span>
+                      <span class="text-base dark:text-[#dcdee3]">Components</span>
+                    </div>
+                  </summary>
+                  <ul>
+                    <li><a href="" class="text-[17px] ml-5">Accordian </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Modal </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Alerts </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Breadcum </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Carousel </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Pagination  </a></li>
+                    <li><a href="" class="text-[17px] ml-5">Table</a></li>
+                    <li><a href="" class="text-[17px] ml-5">Diff</a></li>
+                    <li><a href="" class="text-[17px] ml-5">Tabs </a></li>
+                    
+                  </ul>
+                </details>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="calender.html">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-calendar text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Calender</span>
+                  </div>
+                </a>
+              </li>
+              <li class="mt-2 pr-5 ">
+                <a href="#">
+                  <div class="flex items-center justify-center gap-4">
+                    <span class="icon"><i class="fa-solid fa-gear text-[18px] text-[#6B7280]"></i></span>
+                    <span class="text-base dark:text-[#dcdee3]">Setting</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+    
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.2/dist/chart.umd.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="./js/chart1.js"></script>
+  <script src="./js/chart2.js"></script>
+</body>
+
+</html>
